@@ -28,4 +28,55 @@ public class ClassRoom {
 
         }
     }
+
+    public void ageSort() {
+        for (int i = studMass.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+
+                if (studMass[j].getAge() > studMass[j + 1].getAge()) {
+                    Student tmp = studMass[j];
+                    studMass[j] = studMass[j + 1];
+                    studMass[j + 1] = tmp;
+                }
+            }
+        }
+    }
+    public void ageRevSort() {
+        for (int i = studMass.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+
+                if (studMass[j].getAge() < studMass[j + 1].getAge()) {
+                    Student tmp = studMass[j];
+                    studMass[j] = studMass[j + 1];
+                    studMass[j + 1] = tmp;
+                }
+            }
+        }
+    }
+
+    public void nameSort() {
+        for (int i = studMass.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+
+                if (studMass[j].getName() > studMass[j + 1].getName()) {
+                    Student tmp = studMass[j];
+                    studMass[j] = studMass[j + 1];
+                    studMass[j + 1] = tmp;
+                }
+            }
+        }
+    }
+    public void nameRevSort() {
+        for (int i = studMass.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+
+                if (studMass[j].getAge() < studMass[j + 1].getAge()) {
+                    Student tmp = studMass[j];
+                    studMass[j] = studMass[j + 1];
+                    studMass[j + 1] = tmp;
+                }
+            }
+        }
+    }
+
 }
