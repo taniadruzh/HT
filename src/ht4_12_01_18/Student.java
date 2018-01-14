@@ -18,8 +18,26 @@ public class Student {
     public void setName() {
         String [] str = new String [20];
         str[0] = "Vasia";
-        
-        this.name = name;
+        str[1] = "Petia";
+        str[2] = "Tolik";
+        str[3] = "Edic";
+        str[4] = "Nikolay";
+        str[5] = "Vova";
+        str[6] = "Anton";
+        str[7] = "Sergey";
+        str[8] = "Ashot";
+        str[9] = "Kirill";
+        str[10] = "Ksenia";
+        str[11] = "Karina";
+        str[12] = "Vasilisa";
+        str[13] = "Stepanida";
+        str[14] = "Efrosinia";
+        str[15] = "Katerina";
+        str[16] = "Valeria";
+        str[17] = "Evlampia";
+        str[18] = "Pelagea";
+        str[19] = "Varvara";
+        this.name = str[ThreadLocalRandom.current().nextInt(0, 19 + 1) ];
     }
 
     public int getAge() {
