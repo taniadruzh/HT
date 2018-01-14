@@ -1,4 +1,4 @@
-package ht2;
+package ht2_29_12_17;
 
 import java.util.Arrays;
 import java.util.Scanner;
