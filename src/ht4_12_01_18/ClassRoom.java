@@ -78,5 +78,21 @@ public class ClassRoom {
             }
         }
     }
+    public void findStudent(String name){
+        for (int i = 0; i < studMass.length; i++){
+            if (studMass[i].getName().equals(name)){
+                System.out.println(studMass[i].getName() + " " + studMass[i].getAge());
+            }
+        }
+    }
+
+    public String findClass(String name){
+        for (int i = 0; i < studMass.length; i++){
+            if (studMass[i].getName().equals(name)){
+                return classWord;
+            }
+        }
+        return "Not found in " + classWord;
+    }
 
 }
