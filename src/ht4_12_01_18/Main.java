@@ -70,18 +70,44 @@ public class Main {
             System.out.println(student.getName() +" "+ student.getAge());
         }
 
+        int countNEnA = 0;
         System.out.println("-------Not enough A---------");
         for (int j = n1; j < studArr.length; j++){
             if (studArr[j].getAge() < 12) {
                 System.out.println(studArr[j].getName() +" "+ studArr[j].getAge());
+                countNEnA ++;
             }
         }
+        System.out.println("Total not in A: " + countNEnA);
+
+        int countNEnB = 0;
         System.out.println("-------Not enough B---------");
         for (int j = k1; j < studArr.length; j++){
             if (studArr[j].getAge() >= 12) {
                 System.out.println(studArr[j].getName() +" "+ studArr[j].getAge());
+                countNEnB ++;
             }
         }
+        System.out.println("Total not in B: " + countNEnB);
+        System.out.println("--------------------");
+        System.out.println("----------A----------");
+        System.out.println("Count students in A class is " + clA.getClassCount());
+        System.out.println("----------B----------");
+        System.out.println("Count students in B class is " + clB.getClassCount());
+        System.out.println("--------------------");
+        System.out.println("----------A----------");
+        System.out.println("Students list in A class is: ");
+        clA.getClassList();
+        System.out.println("----------B----------");
+        System.out.println("Students list in B class is: ");
+        clB.getClassList();
+        System.out.println("--------------------");
+        System.out.println("----------A----------");
+        System.out.println("Students list in A class is: ");
+        clA.getShortClassList();
+        System.out.println("----------B----------");
+        System.out.println("Students list in B class is: ");
+        clB.getShortClassList();
 
     }
 }

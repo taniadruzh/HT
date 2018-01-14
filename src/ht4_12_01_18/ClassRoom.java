@@ -10,4 +10,22 @@ public class ClassRoom {
         this.classLimit = classLimit;
         this.studMass = studMass;
     }
+
+    public int getClassCount() {
+        return studMass.length;
+    }
+
+    public void getClassList(){
+        for (Student mass : studMass) {
+            System.out.println(mass.getName() + " " + mass.getAge());
+
+        }
+    }
+
+    public void getShortClassList(){
+        for (Student mass : studMass) {
+            System.out.println(mass.getName());
+
+        }
+    }
 }
