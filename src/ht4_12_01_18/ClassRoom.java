@@ -58,7 +58,7 @@ public class ClassRoom {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
 
-                if (studMass[j].getName() > studMass[j + 1].getName()) {
+                if (studMass[j].getName().compareTo(studMass[j + 1].getName()) > 0) {
                     Student tmp = studMass[j];
                     studMass[j] = studMass[j + 1];
                     studMass[j + 1] = tmp;
@@ -70,7 +70,7 @@ public class ClassRoom {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
 
-                if (studMass[j].getAge() < studMass[j + 1].getAge()) {
+                if (studMass[j].getName().compareTo(studMass[j + 1].getName()) < 0) {
                     Student tmp = studMass[j];
                     studMass[j] = studMass[j + 1];
                     studMass[j + 1] = tmp;

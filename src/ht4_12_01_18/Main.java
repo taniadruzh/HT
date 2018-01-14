@@ -112,11 +112,42 @@ public class Main {
         System.out.println("--------------------");
         System.out.println("----------A----------");
         System.out.println("Sorted students list in A class is: ");
-        clA.ageRevSort();
+        clA.ageSort();
         clA.getClassList();
         System.out.println("----------B----------");
         System.out.println("Sorted students list in B class is: ");
+        clB.ageSort();
+        clB.getClassList();
+
+        System.out.println("--------------------");
+        System.out.println("----------A----------");
+        System.out.println("Sorted rev students list in A class is: ");
+        clA.ageRevSort();
+        clA.getClassList();
+        System.out.println("----------B----------");
+        System.out.println("Sorted rev students list in B class is: ");
         clB.ageRevSort();
+        clB.getClassList();
+
+        System.out.println("--------------------");
+        System.out.println("----------A----------");
+        System.out.println("Sorted name students list in A class is: ");
+        clA.nameSort();
+        clA.getClassList();
+        System.out.println("----------B----------");
+        System.out.println("Sorted name students list in B class is: ");
+        clB.nameSort();
+        clB.getClassList();
+
+
+        System.out.println("--------------------");
+        System.out.println("----------A----------");
+        System.out.println("Sorted rev name students list in A class is: ");
+        clA.nameRevSort();
+        clA.getClassList();
+        System.out.println("----------B----------");
+        System.out.println("Sorted rev name students list in B class is: ");
+        clB.nameRevSort();
         clB.getClassList();
 
     }
