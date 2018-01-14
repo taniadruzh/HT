@@ -22,20 +22,66 @@ public class Main {
         else {
            n = 12;
         }
+        int n1 = 0;
         Student [] stA = new Student[n];
+        for (int i = 0; i < n; i++){
+            for (int j = n1; j < studArr.length; j++){
+                if (studArr[j].getAge() < 12) {
+                    stA[i] = studArr[j];
+                    n1 = j + 1;
+                    break;
+                }
+            }
+        }
         ClassRoom clA = new ClassRoom("A",12,stA);
 
+        int k = 0;
         if (countB < 15) {
-            n = countB;
+            k = countB;
         }
         else {
-            n = 15;
+            k = 15;
         }
-        Student [] stB = new Student[n];
+        Student [] stB = new Student[k];
+        int k1 = 0;
+        for (int i = 0; i < k; i++){
+            for (int j = k1; j < studArr.length; j++){
+                if (studArr[j].getAge() >= 12) {
+                    stB[i] = studArr[j];
+                    k1 = j + 1;
+                    break;
+                }
+            }
+        }
         ClassRoom clB = new ClassRoom("B",15,stB);
 
+        System.out.println("----------ALL----------");
         for (Student student : studArr) {
             System.out.println(student.getName() +" "+ student.getAge());
         }
+
+        System.out.println("----------A----------");
+        for (Student student : stA) {
+            System.out.println(student.getName() +" "+ student.getAge());
+        }
+
+        System.out.println("----------B----------");
+        for (Student student : stB) {
+            System.out.println(student.getName() +" "+ student.getAge());
+        }
+
+        System.out.println("-------Not enough A---------");
+        for (int j = n1; j < studArr.length; j++){
+            if (studArr[j].getAge() < 12) {
+                System.out.println(studArr[j].getName() +" "+ studArr[j].getAge());
+            }
+        }
+        System.out.println("-------Not enough B---------");
+        for (int j = k1; j < studArr.length; j++){
+            if (studArr[j].getAge() >= 12) {
+                System.out.println(studArr[j].getName() +" "+ studArr[j].getAge());
+            }
+        }
+
     }
 }
