@@ -88,11 +88,16 @@ public class RobotMaker {
         robotAstro2 = new AstromechanicsDroid("Astromech droid"," D4-V3",legs1,hands2,heads3,"AstroMaps");
         robotAstro3 = new AstromechanicsDroid("Astromech droid"," D4-V3",legs1,hands2,heads3,"AstroMaps");
 
+        robotBattler1 = new BattleDroid("Battle droid"," HK-47",legs1,hands3,heads2,"TunelBlast");
+        robotBattler2 = new BattleDroid("Battle droid"," 2C-TA",legs1,hands3,heads2,"TunelBlast");
+
     }
 
     public static void getInfoAboutRobots(){
         robot1.printRobotStatus();
         robot2.printRobotStatus();
         robot3.printRobotStatus();
+
+        robot1.equals(robotAstro1);
     }
 }
