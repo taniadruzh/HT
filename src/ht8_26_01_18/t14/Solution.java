@@ -18,8 +18,9 @@ public class Solution
     }
     public static Building getSchool()
     {
-        Building b = new Building();
-        return b;
+        Building s;
+        s = new School("Kir",15);
+        return s;
     }
     public static Building getBuilding()
     {
