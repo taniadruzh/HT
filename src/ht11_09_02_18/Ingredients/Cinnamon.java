@@ -1,13 +1,13 @@
 package ht11_09_02_18.Ingredients;
 
-public class MilkyFoam {
+public class Cinnamon {
     private int count;
-    private static int price = 4;
+    private static int price = 1;
 
-    public MilkyFoam() {
+    public Cinnamon() {
     }
 
-    public MilkyFoam(int count) {
+    public Cinnamon(int count) {
         this.count = count;
     }
 
@@ -29,7 +29,7 @@ public class MilkyFoam {
 
     @Override
     public String toString() {
-        return "Milky foam{" +
+        return "Cinnamon{" +
                 "count=" + count +
                 ", price=" + price +
                 '}';
