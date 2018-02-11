@@ -69,7 +69,7 @@ public class Mix extends Drink {
     }
 
     public void setPrice(){
-        super.setPrice(water.getPrice() + coffee.getPrice() + sugar.getPrice() + milkyFoam.getPrice());
+        super.setPrice(water.getPrice() + coffee.getPrice() + sugar.getPrice() + milkyFoam.getPrice() + cinnamon.getPrice());
     }
 
     public int getPrice(){
