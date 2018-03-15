@@ -11,10 +11,10 @@ import java.util.TreeSet;
 
 public class Runner {
     public static void main(String[] args) {
-        t1();
-        t2();
-        t3();
-        t4();
+//        t1();
+//        t2();
+//        t3();
+//        t4();
         t5();
 
     }
@@ -133,5 +133,18 @@ public class Runner {
         birdTreeSet.add(new Duck("Duckie"));
         birdTreeSet.add(new Duck("Trik"));
 
+        for (Bird bird : birdTreeSet) {
+            System.out.println(bird.getName());
+        }
+
+        HashSet<Bird> birdHashSet = new HashSet<>();
+        birdHashSet.add(new Ostrich("Vasia"));
+        birdHashSet.add(new Ostrich("Ignat"));
+        birdHashSet.add(new Duck("Duckie"));
+        birdHashSet.add(new Duck("Trik"));
+
+        for (Bird bird : birdHashSet) {
+            System.out.println(bird.getName());
+        }
     }
 }
