@@ -4,10 +4,7 @@ import ht17_13_03_18.Birds.Bird;
 import ht17_13_03_18.Birds.Duck;
 import ht17_13_03_18.Birds.Ostrich;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Runner {
     public static void main(String[] args) {
@@ -137,13 +134,41 @@ public class Runner {
             System.out.println(bird.getName());
         }
 
+        System.out.println("------------------");
+
         HashSet<Bird> birdHashSet = new HashSet<>();
         birdHashSet.add(new Ostrich("Vasia"));
         birdHashSet.add(new Ostrich("Ignat"));
         birdHashSet.add(new Duck("Duckie"));
         birdHashSet.add(new Duck("Trik"));
 
+
+
         for (Bird bird : birdHashSet) {
+            System.out.println(bird.getName() +" " + bird.hashCode());
+        }
+
+        System.out.println("------------------");
+
+        ArrayList<Bird> birdArrayList = new ArrayList<>();
+        birdArrayList.add(new Ostrich("Vasia"));
+        birdArrayList.add(new Ostrich("Ignat"));
+        birdArrayList.add(new Duck("Duckie"));
+        birdArrayList.add(new Duck("Trik"));
+
+        Collections.sort(birdArrayList);
+        for (Bird bird : birdArrayList) {
+            System.out.println(bird.getName());
+        }
+
+        LinkedList<Bird> birdLinkedList = new LinkedList<>();
+        birdLinkedList.add(new Ostrich("Vasia"));
+        birdLinkedList.add(new Ostrich("Ignat"));
+        birdLinkedList.add(new Duck("Duckie"));
+        birdLinkedList.add(new Duck("Trik"));
+        System.out.println("------------------");
+        Collections.sort(birdLinkedList);
+        for (Bird bird : birdLinkedList) {
             System.out.println(bird.getName());
         }
     }
