@@ -6,9 +6,9 @@ import java.util.HashSet;
 
 public class Runner {
     public static void main(String[] args) {
-//        t1();
-//        t2();
-//        t3();
+        t1();
+        t2();
+        t3();
         t4();
 
     }
@@ -28,9 +28,6 @@ public class Runner {
         names.add("Таня");
 
         HashSet<String> namesSet = new HashSet<>(names);
-//        for (String name : names) {
-//            namesSet.add(name);
-//        }
 
         names.add("Виктор");
         names.add("Игнат");
@@ -67,7 +64,6 @@ public class Runner {
 
         for (Integer integer : numb) {
             System.out.println(integer);
-
         }
 
         System.out.println("max = " + Collections.max(numb));
@@ -92,9 +88,6 @@ public class Runner {
         }
 
         ArrayList<Integer> list2 = new ArrayList<>(list1.subList(8,13));
-//        for( int i = 8; i < 13; i++){
-//            list2.add(list1.get(i));
-//        }
 
         for (Integer integer : list1) {
             System.out.println(integer);
@@ -116,12 +109,7 @@ public class Runner {
             System.out.print(integer + " ");
         }
 
-//        list1.removeAll(list1.subList(15,43));
         list1.subList(15,43).clear();
-        
-//        for( int i = 43; i >= 15; i--){
-//            list1.remove(i);
-//        }
 
         System.out.println();
         for (Integer integer : list1) {
