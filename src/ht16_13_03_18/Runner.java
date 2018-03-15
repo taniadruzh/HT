@@ -5,9 +5,9 @@ import java.util.*;
 
 public class Runner {
     public static void main(String[] args) {
-//        t1();
-//        t2();
-//        t3();
+        t1();
+        t2();
+        t3();
         t4();
 
     }
