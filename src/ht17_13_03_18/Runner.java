@@ -1,8 +1,13 @@
-package ht17_13_03_18.ht16_13_03_18;
+package ht17_13_03_18;
+
+import ht17_13_03_18.Birds.Bird;
+import ht17_13_03_18.Birds.Duck;
+import ht17_13_03_18.Birds.Ostrich;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class Runner {
     public static void main(String[] args) {
@@ -10,6 +15,7 @@ public class Runner {
         t2();
         t3();
         t4();
+        t5();
 
     }
 
@@ -115,6 +121,17 @@ public class Runner {
         for (Integer integer : list1) {
             System.out.print(integer + " ");
         }
+
+    }
+
+    /*Найти способ как сортировать объекты(объект на базе собственного класса) в коллекциях TreeSet, HashSet, ArrayList, LinkedList/.
+Написать по одному примеру для каждой коллекции.*/
+    private static void t5(){
+        TreeSet<Bird> birdTreeSet = new TreeSet<>();
+        birdTreeSet.add(new Ostrich("Vasia"));
+        birdTreeSet.add(new Ostrich("Ignat"));
+        birdTreeSet.add(new Duck("Duckie"));
+        birdTreeSet.add(new Duck("Trik"));
 
     }
 }
