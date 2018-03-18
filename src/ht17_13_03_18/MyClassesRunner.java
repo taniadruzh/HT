@@ -2,6 +2,8 @@ package ht17_13_03_18;
 
 import ht17_13_03_18.MySuperClasses.MySuperArrayList;
 
+import java.util.LinkedList;
+
 public class MyClassesRunner {
     public static void main(String[] args) {
         MySuperArrayList<Integer> my = new MySuperArrayList<>();
@@ -16,5 +18,7 @@ public class MyClassesRunner {
         System.out.println(my.toString());
         System.out.println(my.size());
         System.out.println(my.contains(1));
+
+        LinkedList m
     }
 }
