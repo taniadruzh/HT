@@ -3,26 +3,21 @@ package ht17_13_03_18.MySuperClasses;
 
 public class MySuperArrayList <T> {
     private T[] array;
-//    private int size;
     private int size;
 
     public MySuperArrayList() {
-        array = (T[]) new Object[10];
-//        size = 10;
+        array = (T[]) new Object[1];
         size = 0;
-    }
-
-    public MySuperArrayList(int size){
-        array = (T[]) new Object[size];
-//        this.size = size;
-        this.size = 0;
     }
 
     public void add(T item){
         T[] newArray = (T[]) new Object[size + 1];
         int it = 0;
         for (T t : array) {
-            newArray[it] = t;
+            if (t != null) {
+                newArray[it] = t;
+                it++;
+            }
         }
         newArray[size] = item;
         size = size + 1;
@@ -36,6 +31,35 @@ public class MySuperArrayList <T> {
             return array[0];
         return array[number];
     }
+
+    public void remove(int item){
+        if (item <= size || item > 0){
+            T[] newArray = (T[]) new Object[size -1];
+            int it = 0;
+            for (int i = 0; i < array.length; i ++) {
+                if (i != item) {
+                    newArray[it] = array[i];
+                    it++;
+                }
+            }
+            size = size - 1;
+            array = newArray;
+        }
+    }
+
+    public int size(){
+        return size;
+    }
+
+    public boolean contains(T item){
+        for (T t : array) {
+            if (t.equals(item))
+                return true;
+        }
+        return false;
+    }
+
+
 
     @Override
     public String toString() {
