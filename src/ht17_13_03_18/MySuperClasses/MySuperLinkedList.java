@@ -2,21 +2,17 @@ package ht17_13_03_18.MySuperClasses;
 
 public class MySuperLinkedList<T> {
     private int size;
-    private Node<T> current;
-    private Node<T> prev;
-    private Node<T> next;
+    private Node<T> ob;
 
     public MySuperLinkedList() {
-        current = null;
-        prev = null;
-        next = null;
+        ob = new Node<>();
         size = 0;
     }
 
-    public void add(Node<T> item){
-        prev = current;
-        current = item;
-        next = null;
+    public void add(T item){
+        
     }
+
+
 
 }

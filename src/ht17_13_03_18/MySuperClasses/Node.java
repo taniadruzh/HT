@@ -6,6 +6,7 @@ public class Node<T> {
     private T nextObject;
 
     public Node() {
+
     }
 
     public Node(T currentObject, T priviousObject, T nextObject) {
